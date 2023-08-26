@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="login(event)">
+        <label>Name</label>
+        <input type="text" id="name"><br><br>
+        <label>Price</label>
+        <input type="number" id="price"><br><br>
+        <label>Image</label>
+        <input type="file" id="image"><br><br>
+        
+        <input type="submit">
+    </form>
+    <script>
+        function login(event){
+        event.preventDefault();
+
+        const username = document.getElementById("name").value;
+        const userprice = document.getElementById("price").value;
+        const userimage = document.getElementById("image").value;
+        console.log(username,userprice,userimage)
+
+        if(username && userprice && userimage){
+            var userObject={name:username,price:userprice, image:userimage}
+            var array = JSON.parse(localStorage.getItem("users"));
+            console.log(array)
+
+        //     array.push(userObject)
+            localStorage.setitem("users", JSON.stringify(array))
+         }
+        }
+    </script>
+    
+</body>
+</html>
