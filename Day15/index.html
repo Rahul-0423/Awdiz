@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/85d06e0fd8.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+#Screen {
+    height: 7100px;
+    width: 100%;
+    border: 3px Solid black;
+    background-color: black;
+    color: #FFFFFF;
+}
+
+#Navbar {
+    font-family: 'Space Grotesk', sans-serif;
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#TechBlog {
+    font-weight: 700;
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid white; */
+    /* align-items: end; only works on div */
+}
+
+#TechBlog>p {
+    margin: 40px 25px;
+}
+
+#TechBlog>p:nth-child(2) {
+    display: none;
+}
+
+#menu {
+    /* border: 1px solid white;    */
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+#SocialNetwork {
+    /* border: 1px solid white;    */
+    height: 100%;
+    width: 23%;
+    display: flex;
+    justify-content: right;
+}
+
+#SocialNetwork>i {
+    padding-right: 25px;
+    padding-top: 50px;
+}
+
+#bars {
+    display: none;
+}
+
+#Home {
+    /* border: 2px solid white; */
+    height: 570px;
+    width: 100%;
+    text-align: center;
+}
+
+#img {
+    width: 100%;
+    /* border: 1px solid orangered; */
+    height: 105px;
+    margin-top: 140px;
+}
+
+#heading {
+    /* border: 1px solid red; */
+    width: 100%;
+    margin-top: 40px;
+    font-size: 35px;
+    letter-spacing: 4px;
+}
+
+#paragraph {
+    /* border: 1px solid red; */
+    font-family: 'DM Sans', sans-serif;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 22.4px;
+    margin-bottom: 50px;
+}
+
+#button {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+#Readmore {
+    /* border: 1px solid red; */
+    height: 44px;
+    width: 160px;
+    display: flex;
+    /* border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%; */
+    background-color: #D4D3D3;
+    color: black;
+    border-radius: 20px;
+}
+
+#Readmore>div:nth-child(1) {
+    width: 70%;
+    height: 100%;
+    /* border: 1px solid red; */
+    font-size: 18px;
+    padding-top: 11px;
+    padding-left: 11px;
+}
+
+#Readmore>div:nth-child(2) {
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid red; */
+    padding-top: 14px;
+    padding-right: 10px;
+}
+
+#body {
+    font-family: 'DM Sans', sans-serif;
+    width: 100%;
+    height: 540px;
+    /* border: 4px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+
+#left {
+    width: 28%;
+    height: 500px;
+    /* border: 1px solid red; */
+    margin-left: 30px;
+
+}
+
+#right {
+    height: 500px;
+    /* border: 1px solid blue; */
+    width: 58%;
+    margin-right: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#img1 {
+    width: 45%;
+    height: 500px;
+    /* border: 1px solid red; */
+    background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg);
+    background-size: cover;
+}
+
+#img1>div:hover {
+    background-color: grey;
+}
+
+#img1>div>div:hover {
+    background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image2.jpg );
+    background-size: cover;
+}
+
+#img2 {
+    width: 45%;
+    height: 500px;
+    /* border: 1px solid red; */
+    /* margin-right: 40px; */
+    background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg);
+    background-size: cover;
+}
+
+#left>div:nth-child(2) {
+    height: 20%;
+    width: 80%;
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+#left>div:nth-child(3) {
+    height: 30%;
+    width: 80%;
+    /* border: 1px solid red; */
+    margin-top: 70px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+#left>div:nth-child(4) {
+    height: 20%;
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-top: 60px;
+}
+
+#Button2 {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+#Readmore2 {
+    /* border: 1px solid red; */
+    height: 44px;
+    width: 160px;
+    display: flex;
+    background-color: #D4D3D3;
+    color: black;
+    border-radius: 20px;
+}
+
+#Readmore2>div:nth-child(1) {
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid red; */
+    font-size: 18px;
+    padding-top: 11px;
+    padding-left: 20px;
+}
+
+#Readmore2>div:nth-child(2) {
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid red; */
+    padding-top: 14px;
+    padding-right: 10px;
+}
+
+#body2 {
+    height: 170px;
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid white; */
+    margin-top: 100px;
+    display: flex;
+}
+
+#body2>div:nth-child(1) {
+    width: 60%;
+    height: 100%;
+    border-right: 1px solid rgba(128, 128, 128, 0.396);
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+#body2 h1 {
+    margin-top: 30px;
+}
+
+#body2>div:nth-child(2) {
+    width: 34%;
+    margin: auto;
+    margin-left: 6%;
+    height: 70%;
+    margin-top: 30px;
+    /* border: 1px solid red; */
+    letter-spacing: 1px;
+    font-size: 19px;
+}
+
+#body3 {
+    /* border: 2px solid white; */
+    height: 250px;
+    width: 90%;
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#body3>div:nth-child(1) {
+    width: 15%;
+    /* border: 1px solid green; */
+}
+
+#body3>div:nth-child(2) {
+    width: 33%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#body3>div:nth-child(2)>div:nth-child(1) {
+    background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image4.jpg );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 48%;
+}
+
+#body3>div:nth-child(2)>div:nth-child(2) {
+    background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image5.jpg );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 48%;
+}
+
+#body3>div:nth-child(3) {
+    width: 33%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#body3>div:nth-child(3)>div:nth-child(1) {
+    background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image8.jpg );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 48%;
+}
+
+#body3>div:nth-child(3)>div:nth-child(2) {
+    background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image12.jpg );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 48%;
+}
+
+#body3>div:nth-child(4) {
+    width: 15%;
+    /* border: 1px solid green; */
+    background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image15.jpg );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#body3>div:nth-child(2)>div:nth-child(1):hover>button {
+    opacity: 10;
+    transition: all .7s;
+}
+
+#body3>div:nth-child(2)>div:nth-child(2):hover>button {
+    opacity: 10;
+    transition: all .7s;
+}
+
+#body3>div:nth-child(3)>div:nth-child(1):hover>button {
+    opacity: 10;
+    transition: all .7s;
+}
+
+#body3>div:nth-child(3)>div:nth-child(2):hover>button {
+    opacity: 10;
+    transition: all .7s;
+}
+
+#body3>div:nth-child(4):hover>button {
+    opacity: 10;
+    transition: all .7s;
+}
+
+#body3>div:nth-child(1)>h1 {
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+#body3>div:nth-child(1)>p {
+    letter-spacing: 2px;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+#body3 button {
+    opacity: 0;
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-top: 60%;
+    margin-left: 16%;
+    background-color: #E3E2E2;
+}
+
+#body4a {
+    height: 110px;
+    width: 100%;
+    margin-top: 150px;
+    border-top: 1px solid rgba(128, 128, 128, 0.285);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.285);
+    font-size: 40px;
+    font-weight: 100;
+}
+
+#body4a h1 {
+    font-weight: 100;
+}
+
+#body4b {
+    height: 110px;
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.285);
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 150px;
+    text-align: right;
+}
+
+#body4b h1 {
+    font-weight: 100;
+}
+
+#body5 {
+    height: 450px;
+    width: 87%;
+    margin: auto;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#body5>div {
+    width: 31.5%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+#body5 img {
+    height: 75%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#body5 p {
+    margin-top: 10px;
+}
+
+#body5 h2 {
+    margin-top: 10px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: 33px;
+}
+
+#body6 {
+    height: 530px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    margin-top: 200px;
+}
+
+#body6>div:nth-child(1) {
+    /* border: 1px solid white; */
+    height: 100%;
+    width: 43%;
+    text-align: center;
+}
+
+#body6 h1 {
+    margin-top: 130px;
+    font-size: 40px;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    margin-bottom: 50px;
+}
+
+#body6 p {
+    font-size: 17px;
+    line-height: 26px;
+    color: rgb(161, 161, 161);
+    letter-spacing: 1px;
+    width: 55%;
+    margin: auto;
+}
+
+#body6>div:nth-child(2) {
+    /* border: 1px solid white; */
+    height: 100%;
+    width: 57%;
+    background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image11.jpg);
+    background-size: cover;
+    text-align: center;
+
+}
+
+#body6 button {
+    height: 45px;
+    width: 150px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #D4D3D3;
+    margin-top: 30%;
+    font-size: 16px;
+}
+
+#body7 {
+    width: 100%;
+    height: 600px;
+    margin-top: 100px;
+    background-position: 50% 50%;
+    opacity: 0.2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/background1.jpg);
+    margin-bottom: 100px;
+
+}
+
+#body7>div {
+    color: white;
+    width: 35%;
+    /* border: 3px solid red; */
+    height: 70%;
+    margin-left: 5%;
+    padding-top: 80px;
+}
+
+#body8 {
+    width: 90%;
+    margin: auto;
+    height: 1000px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    margin-bottom: 150px;
+}
+
+#body8>div:nth-child(1) {
+    width: 45%;
+    height: 600px;
+    margin-top: 20%;
+    /* border: 1px solid blue; */
+}
+
+#body8>div:nth-child(1)>div {
+    width: 100%;
+    height: 70px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(82, 82, 82, 0.338);
+    font-size: 30px;
+    padding-top: 32px;
+    padding-bottom: 12px;
+}
+
+#body8>div:nth-child(1)>div:hover {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.945), gray 30%, rgba(0, 0, 0, 0.945)60%);
+    color: bisque;
+}
+
+#body8>div:nth-child(2) {
+    width: 48%;
+    height: 100%
+}
+
+#body8>div:nth-child(2)>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#body9 {
+    height: 450px;
+    width: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#body9>div:nth-child(1) {
+    /* border: 1px solid white;  */
+    height: 100%;
+    width: 50%;
+    background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image13.jpg);
+    background-size: cover;
+}
+
+#body9>div:nth-child(1)>div {
+    /* border: 1px solid red; */
+    width: 80%;
+    height: 70%;
+    margin: 10% 10%;
+    background-color: black;
+}
+
+#body9>div:nth-child(1)>div h1 {
+    padding-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+#body9>div:nth-child(1)>div p {
+    margin-left: 10%;
+    font-size: 18px;
+    width: 75%;
+    margin-bottom: 30px;
+}
+
+#body9>div:nth-child(1)>div h3 {
+    margin-left: 10%;
+    margin-bottom: 30px;
+}
+
+#body9>div:nth-child(1)>div h4 {
+    margin-left: 10%;
+    font-weight: 100;
+}
+
+#body9>div:nth-child(2) {
+    /* border: 1px solid white;  */
+    height: 100%;
+    width: 50%;
+    margin-right: 5%;
+}
+
+#body9>div:nth-child(2)>h1 {
+    margin-top: 5%;
+    margin-left: 10%;
+    font-size: 70px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+#body9>div:nth-child(2)>h2 {
+    margin-left: 10%;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+#body9>div:nth-child(2)>p {
+    margin-left: 10%;
+    margin-top: 30px;
+    width: 80%;
+    font-size: 18px;
+}
+
+#body9>div:nth-child(2)>button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 16px;
+    margin-left: 10%;
+    margin-top: 50px;
+    background-color: #D4D3D3;
+}
+
+#body9>div:nth-child(2)>button:hover {
+    background-image: linear-gradient(to right, rgba(66, 66, 66, 0.813), gray 50%, rgba(104, 104, 104, 0.945)60%);
+
+}
+
+#body10 {
+    height: 500px;
+    width: 100%;
+    /* border: 3px solid green; */
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+#body10>div:nth-child(1) {
+    width: 30%;
+    height: 85%;
+    margin-top: 3%;
+    margin-left: 5%;
+    /* border: 1px solid red; */
+}
+
+#body10>div:nth-child(1)>div {
+    /* border: 1px solid white; */
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#body10>div:nth-child(1)>div p {
+    font-size: 18px;
+}
+
+#body10>div:nth-child(1)>div h3 {
+    font-size: 18px;
+    font-weight: 100;
+    width: 75%;
+    line-height: 25px;
+    margin: auto;
+}
+
+#body10>div:nth-child(2) {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+#body10>div:nth-child(2) img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#footer {
+    width: 90%;
+    height: 250px;
+    margin: auto;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer>div {
+    width: 24.8%;
+    height: 100%;
+    /* border: 1px solid green; */
+    color: rgba(128, 128, 128, 0.835);
+}
+
+#footer>div:nth-child(1) img {
+    height: 20%;
+}
+
+#footer>div:nth-child(1) p {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#footer>div:nth-child(1) h3 {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#footer>div:nth-child(2) p {
+    white-space: pre-wrap;
+    font-size: 18px;
+}
+#footer>div:nth-child(3) p {
+    font-size: 18px;
+    line-height: 40px;
+}
+#footer>div:nth-child(4) p {
+    font-size: 18px;
+    line-height: 25px;
+    margin-left: 15%;
+}
+
+
+/* tablet view  */
+@media screen and (min-width: 770px) and (max-width:990px) {
+    #Screen {
+        height: 11000px;
+        width: 100%;
+    }
+
+    #TechBlog>p:nth-child(1) {
+        display: none;
+    }
+
+    #TechBlog>p:nth-child(2) {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #SocialNetwork {
+        display: none;
+    }
+
+    #bars {
+        display: block;
+        padding-right: 40px;
+        padding-top: 40px;
+    }
+
+    #body {
+        flex-direction: column;
+        margin-top: 100px;
+        /* border: 2px solid green; */
+        height: 1000px;
+    }
+
+    #left {
+        width: 100%;
+    }
+
+    #right {
+        width: 90%;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    #body2 {
+        flex-direction: column;
+        width: 80%;
+        height: 300px;
+        margin: auto;
+        margin-top: 200px;
+    }
+
+    #body2>div:nth-child(1) {
+        width: 100%;
+        border-bottom: 1px solid grey;
+        border-right: none;
+        padding-bottom: 20px;
+    }
+
+    #body2>div:nth-child(2) {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    #body3 {
+        height: 1050px;
+        width: 95%;
+        flex-wrap: wrap;
+    }
+
+    #body3>div:nth-child(1) {
+        width: 100%;
+    }
+
+    #body3>div:nth-child(2) {
+        width: 100%;
+        height: 270px;
+    }
+
+    #body3>div:nth-child(2)>div:nth-child(1) {
+        width: 49%;
+        height: 270px;
+    }
+
+    #body3>div:nth-child(2)>div:nth-child(2) {
+        width: 49%;
+        height: 270px;
+    }
+
+    #body3>div:nth-child(3) {
+        width: 100%;
+        height: 270px;
+    }
+
+    #body3>div:nth-child(3)>div:nth-child(1) {
+        width: 49%;
+        height: 270px;
+    }
+
+    #body3>div:nth-child(3)>div:nth-child(2) {
+        width: 49%;
+        height: 270px;
+    }
+
+    #body3>div:nth-child(4) {
+        width: 50%;
+        margin: auto;
+        height: 270px;
+    }
+
+    #body3 button {
+        margin-top: 110px;
+        margin-left: 120px;
+    }
+
+    #body5 {
+        height: 900px;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #body5>div {
+        width: 47%;
+        margin: auto;
+        height: 400px;
+        margin-top: 50px;
+    }
+
+    #body6 {
+        height: 1000px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #body6>div:nth-child(1) {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 50px;
+    }
+
+    #body6>div:nth-child(2) {
+        width: 100%;
+        height: 400px;
+    }
+
+    #body6 button {
+        margin-top: 20%;
+    }
+    
+
+    #body8 {
+        flex-direction: column;
+        width: 100%;
+        height: 1000px;
+        /* border: 1px solid green; */
+    }
+
+    #body8>div:nth-child(1) {
+        width: 90%;
+        margin: auto;
+    }
+
+    #body8>div:nth-child(2) {
+        width: 90%;
+        margin: auto;
+        height: 400px;
+    }
+
+    #body9 {
+        width: 100%;
+        flex-direction: column;
+        /* border: 1px solid green; */
+        height: 700px;
+    }
+
+    #body9>div:nth-child(1) {
+        width: 100%;
+        height: 500px;
+        /* border: 1px solid red; */
+    }
+
+    #body9>div:nth-child(1)>div {
+        width: 90%;
+        margin: auto;
+        margin-top: 5%;
+        /* border: 1px solid white; */
+
+    }
+
+    #body9>div:nth-child(1)>div>h1 {
+        padding-top: 20px;
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    #body9>div:nth-child(1)>div>p {
+        width: 95%;
+        margin-left: 20px;
+    }
+
+    #body9>div:nth-child(1)>div>h3 {
+        margin-left: 20px;
+    }
+
+    #body9>div:nth-child(1)>div>h4 {
+        margin-left: 20px;
+    }
+
+    #body9>div:nth-child(2) {
+        width: 100%;
+        height: 400px;
+        /* border: 1px solid red; */
+    }
+
+    #body9>div:nth-child(2)>h1 {
+        margin-left: 30px;
+    }
+
+    #body9>div:nth-child(2)>h2 {
+        margin-left: 30px;
+    }
+
+    #body9>div:nth-child(2)>p {
+        margin-left: 30px;
+    }
+
+    #body9>div:nth-child(2)>button {
+        margin-left: 30px;
+    }
+
+    #body10 {
+        height: 800px;
+        width: 100%;
+        flex-direction: column-reverse;
+        border: 1px solid red;
+    }
+
+    #body10>div:nth-child(1) {
+        width: 90%;
+        height: 400px;
+        /* border: 1px solid red; */
+    }
+
+    #body10>div:nth-child(1)>div {
+        width: 100%;
+        height: 60px;
+        /* border: 1px solid white; */
+    }
+
+    #body10>div:nth-child(2) {
+        width: 100%;
+        height: 400px;
+        /* border: 1px solid red; */
+        margin-bottom: 50px;
+    }
+    #footer{
+        width: 95%;
+    }
+    #footer > div{
+        width: 48.5%
+    }
+    #footer > div:nth-child(4) p{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:770px) {
+    #Screen {
+        height: 12000px;
+    }
+
+    #TechBlog>p:nth-child(1) {
+        display: none;
+    }
+
+    #TechBlog>p:nth-child(2) {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #SocialNetwork {
+        display: none;
+    }
+
+    #bars {
+        display: block;
+        padding-right: 40px;
+        padding-top: 40px;
+    }
+
+    #body {
+        flex-direction: column;
+        margin-top: 100px;
+        height: 1250px;
+        /* border: 1px solid green; */
+    }
+
+    #left {
+        width: 100%;
+        height: 700px;
+    }
+
+    #right {
+        width: 90%;
+        margin: auto;
+        margin-top: 100px;
+        flex-direction: column;
+        height: 700px;
+    }
+
+    #img1 {
+        background-size: 100% 100%;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #img2 {
+        background-size: 100% 100%;
+        width: 100%;
+    }
+
+    #body2 {
+        flex-direction: column;
+        width: 80%;
+        height: 400px;
+        margin: auto;
+        margin-top: 200px;
+        /* border: 1px solid red; */
+    }
+
+    #body2>div:nth-child(1) {
+        width: 100%;
+        border-bottom: 1px solid grey;
+        border-right: none;
+        padding-bottom: 20px;
+    }
+
+    #body2>div:nth-child(2) {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    #body3 {
+        height: 1500px;
+        flex-direction: column;
+        width: 93%;
+        /* border: 1px solid green; */
+    }
+
+    #body3>div:nth-child(1) {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #body3>div:nth-child(2) {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #body3>div:nth-child(2)>div:nth-child(1) {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 30px;
+    }
+
+    #body3>div:nth-child(2)>div:nth-child(2) {
+        width: 100%;
+        height: 250px;
+    }
+
+    #body3>div:nth-child(3) {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #body3>div:nth-child(3)>div:nth-child(1) {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 30px;
+    }
+
+    #body3>div:nth-child(3)>div:nth-child(2) {
+        width: 100%;
+        height: 250px;
+
+    }
+
+    #body3>div:nth-child(4) {
+        width: 100%;
+        height: 250px;
+    }
+
+    #body3 button {
+        margin-top: 23%;
+        margin-left: 40%;
+    }
+
+    #body5 {
+        height: 1400px;
+        width: 80%;
+        margin: auto;
+        flex-wrap: wrap;
+        /* border: 5px solid green; */
+    }
+
+    #body5>div {
+        height: 400px;
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    #body6 {
+        /* margin-top: 900px; */
+        height: 1000px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #body6>div:nth-child(1) {
+        width: 100%;
+        height: 500px;
+        margin-bottom: 100px;
+    }
+
+    #body6>div:nth-child(2) {
+        width: 100%;
+        height: 400px;
+    }
+
+    #body6 button {
+        margin-top: 170px;
+    }
+
+    #body8 {
+        height: 800px;
+        flex-direction: column;
+        width: 90%;
+        /* border: 1px solid green; */
+    }
+
+    #body8>div:nth-child(1) {
+        width: 80%;
+        margin: auto;
+        height: 400px;
+        /* border: 1px solid white; */
+        margin-bottom: 10px;
+    }
+
+    #body8>div:nth-child(1)>div {
+        height: 30px;
+    }
+
+    #body8>div:nth-child(2) {
+        width: 80%;
+        margin: auto;
+        height: 400px;
+        /* border: 1px solid red; */
+        margin-top: 10px;
+    }
+
+    #body9 {
+        width: 100%;
+        flex-direction: column;
+        /* border: 1px solid green; */
+        height: 700px;
+    }
+
+    #body9>div:nth-child(1) {
+        width: 100%;
+        height: 500px;
+        /* border: 1px solid red; */
+    }
+
+    #body9>div:nth-child(1)>div {
+        width: 90%;
+        margin: auto;
+        margin-top: 5%;
+        /* border: 1px solid white; */
+
+    }
+
+    #body9>div:nth-child(1)>div>h1 {
+        padding-top: 20px;
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    #body9>div:nth-child(1)>div>p {
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    #body9>div:nth-child(1)>div>h3 {
+        margin-left: 20px;
+    }
+
+    #body9>div:nth-child(1)>div>h4 {
+        margin-left: 20px;
+    }
+
+    #body9>div:nth-child(2) {
+        width: 100%;
+        height: 400px;
+        /* border: 1px solid red; */
+    }
+
+    #body9>div:nth-child(2)>h1 {
+        margin-left: 30px;
+    }
+
+    #body9>div:nth-child(2)>h2 {
+        margin-left: 30px;
+    }
+
+    #body9>div:nth-child(2)>p {
+        margin-left: 30px;
+        width: 90%;
+
+    }
+
+    #body9>div:nth-child(2)>button {
+        margin-left: 30px;
+    }
+
+    #body10 {
+        height: 800px;
+        width: 100%;
+        flex-direction: column-reverse;
+        /* border: 1px solid red; */
+    }
+
+    #body10>div:nth-child(1) {
+        width: 90%;
+        height: 400px;
+        /* border: 1px solid red; */
+    }
+
+    #body10>div:nth-child(1)>div {
+        width: 100%;
+        height: 60px;
+        /* border: 1px solid white; */
+    }
+
+    #body10>div:nth-child(2) {
+        width: 100%;
+        height: 400px;
+        /* border: 1px solid red; */
+        margin-bottom: 50px;
+    }
+    #footer{
+        width: 95%;
+        height: 700px;
+        
+    }
+    #footer > div:nth-child(1){
+        width: 100%;
+        height: 230px;
+    }
+    #footer > div:nth-child(2){
+        width: 100%;
+        height: 150px;
+    }
+    #footer > div:nth-child(3){
+        width: 100%;
+        height: 170px;
+    }
+    #footer > div:nth-child(4){
+        width: 100%;
+        height: 70px;
+    }
+    #footer > div:nth-child(4) p{
+        margin: 0;
+    }
+
+}
+    </style>
+</head>
+
+<body>
+    <div id="Screen">
+        <div id="Navbar">
+            <div id="TechBlog">
+                <p>Tech Blog</p>
+                <p>BoldM5</p>
+            </div>
+            <div id="menu">
+                <div>Home</div>
+                <div>Blog</div>
+                <div>Articles</div>
+                <div>About Us</div>
+                <div>FAQ</div>
+            </div>
+            <div id="SocialNetwork">
+                <i class="fa-brands fa-facebook-f fa-lg"></i>
+                <i class="fa-brands fa-twitter fa-lg"></i>
+                <i class="fa-brands fa-instagram fa-lg"></i>
+            </div>
+            <div id="bars">
+                <i class="fa-solid fa-bars fa-xl"></i>
+            </div>
+        </div>
+        <div id="Home">
+            <div id="img">
+                <img style="height: 100%;"
+                    src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/logo.png" />
+            </div>
+            <div id="heading">
+                <h1>Tech Blog</h1>
+            </div>
+            <div id="paragraph">
+                <p>Accusamus ea excepturi hic impedit iste neque soluta, sunt tempore<br>
+                    voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div id="button">
+                <div id="Readmore">
+                    <div>Read more</div>
+                    <div>
+                        <i class="fa-solid fa-play fa-l"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="body">
+            <div id="left">
+                <div>
+                    <h3>TECHNOLOGIES</h3>
+                </div>
+                <div>
+                    <h1>Most popular articles</h1>
+                </div>
+                <div>
+                    Dolor sit amet, consectetur adipisicing elit. Aliquid autem beatae consectetur cumque dolores
+                    dolorum enim inventore iure minus nostrum nulla numquam quam quia quod, reprehenderit.
+                </div>
+                <div id="button2">
+                    <div id="Readmore2">
+                        <div>Read more</div>
+                        <div>
+                            <i class="fa-solid fa-play fa-l"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <div id="img1">
+                    <div style="width: 90%; margin: auto; height: 85%; margin-top: 40px; ">
+                        <div style="width: 80%; margin: auto; height: 70%; ">
+
+                        </div>
+                    </div>
+                </div>
+                <div id="img2">
+
+                </div>
+            </div>
+        </div>
+
+        <div id="body2">
+            <div>
+                <h1>Modern compact, perfectly <br> new design</h1>
+            </div>
+            <div>
+                <p>Numquam, quo recusandae sunt voluptates. Assumenda cumque dolorem eius excepturi inventore laboriosam
+                    provident quam suscipit voluptate voluptates.</p>
+            </div>
+        </div>
+
+        <div id="body3">
+            <div>
+                <h1>Our website</h1>
+                <p>Follow us<br>
+                    tech@blog.com</p>
+            </div>
+            <div>
+                <div><button>See Card</button></div>
+                <div> <button>See Card</button></div>
+            </div>
+            <div>
+                <div> <button>See Card</button></div>
+                <div> <button>See Card</button></div>
+            </div>
+            <div> <button>See Card</button></div>
+        </div>
+
+        <div id="body4a">
+            <h1>Popular-Tech-Blog</h1>
+        </div>
+        <div id="body4b">
+            <h1>Useful-Tech-Blog</h1>
+        </div>
+
+        <div id="body5">
+            <div>
+                <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image10.jpg" />
+                <p><u>MOBILE</u> <u>EARBUDS</u></p>
+                <h2>Smartphones</h2>
+            </div>
+            <div>
+                <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image8.jpg" />
+                <p><u>MOBILE</u> <u>EARBUDS</u></p>
+                <h2>Bubs</h2>
+            </div>
+            <div>
+                <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image2.jpg" />
+                <p><u>MOBILE</u> <u>EARBUDS</u></p>
+                <h2>Smart Watch</h2>
+            </div>
+        </div>
+
+        <div id="body6">
+            <div>
+                <h1>Read our<br>news</h1>
+                <p>Consectetur adipisicing elit
+                    Architecto atque culpa eius,error
+                    est expedita facilis fuga impedit
+                    inventore labore laborum neque
+                    obcaecati odit, placeat quo quod
+                    repellendus tenetur voluptates.</p>
+            </div>
+            <div>
+                <button>Read news <i style="margin-left: 10px;" class="fa-solid fa-play fa-l"></i></button>
+            </div>
+        </div>
+
+        <div id="body7">
+            <div >
+                    <h1 style="font-size:41px;font-family:sans-serif;">Easy to use for everyone</h1>
+                    <p style="color:black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad autem distinctio, ea eum harum id illo itaque laborum maxime natus quaerat quia quo reiciendis.</p>
+            </div>
+        </div>
+
+        <div id="body8">
+            <div>
+                <div>
+                    Programming
+                </div>
+                <div>
+                    Research
+                </div>
+                <div>
+                    Development
+                </div>
+                <div>
+                    Phases
+                </div>
+                <div>
+                    Design
+                </div>
+            </div>
+
+            <div>
+                <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image1.jpg" alt="red">
+            </div>
+        </div>
+
+        <div id="body9">
+            <div>
+                <div>
+                    <h1>;;</h1>
+                    <p>"Aliquid architecto ex nemo nulla rerum saepe, sit veritatis. Blanditiis in laboriosam maiores
+                        nisi, nostrum officia."</p>
+                    <h3>Jose Richardson</h3>
+                    <h4>ARTIST</h4>
+                </div>
+            </div>
+            <div>
+                <h1>500+</h1>
+                <h2>Your feedback</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ea eum eveniet ex explicabo,
+                    facilis, incidunt maxime quibusdam quidem quod saepe, tempora temporibus unde. Consectetur dolor id
+                    nesciunt placeat reprehenderit.</p>
+                <button>Read more <i style="margin-left: 10px;" class="fa-solid fa-play fa-l"></i></button>
+            </div>
+        </div>
+
+        <div id=body10>
+            <div>
+                <div>
+                    <p>01</p>
+                    <h3>
+                        Eos exercitationem numquam quaerat asperiores consequuntur?
+                    </h3>
+                    <i class="fa-solid fa-square-caret-down fa-lg"></i>
+                </div>
+                <div>
+                    <p>02</p>
+                    <h3>
+                        Eos exercitationem numquam quaerat asperiores consequuntur?
+                    </h3>
+                    <i class="fa-solid fa-square-caret-down fa-lg"></i>
+                </div>
+                <div>
+                    <p>03</p>
+                    <h3>
+                        Eos exercitationem numquam quaerat asperiores consequuntur?
+                    </h3>
+                    <i class="fa-solid fa-square-caret-down fa-lg"></i>
+                </div>
+                <div>
+                    <p>04</p>
+                    <h3>
+                        Eos exercitationem numquam quaerat asperiores consequuntur?
+                    </h3>
+                    <i class="fa-solid fa-square-caret-down fa-lg"></i>
+                </div>
+                <div>
+                    <p>05</p>
+                    <h3>
+                        Eos exercitationem numquam quaerat asperiores consequuntur?
+                    </h3>
+                    <i class="fa-solid fa-square-caret-down fa-lg"></i>
+                </div>
+
+            </div>
+            <div>
+                <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image13.jpg" />
+            </div>
+        </div>
+
+        <div id="footer">
+            <div>
+                <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/logo.png" />
+                <p>Ab debitis dolorem dolorum</p>
+                <h3>© COPYRIGHT 2030 MOBIRISE<br>
+                    -<br>
+                    ALL RIGHTS RESERVED</h3>
+            </div>
+            <div>
+                <p>Weisgasse 403 87274
+Herzogenrath<br>
+98 7654 321 120<br>
+mobi@rise.com</p>
+            </div>
+            <div>
+                <p>TWITTER<br>
+                    FACEBOOK<br>
+                    INSTAGRAM<br>
+                    LINKEDIN</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod distinctio eveniet odio maxime, hic voluptate iusto officiis natus ut quis.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
